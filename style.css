@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  color: #172b4d;
+  background-color: #0279bf;
+  display: flex;
+  align-items: start;
+}
+
+div {
+  border-radius: 3px;
+}
+
+#main {
+  display: flex;
+  align-items: start;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.editable {
+  user-select: none;
+  outline: none;
+  margin: 7px;
+  padding: 10px;
+  cursor: pointer !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editing {
+  background: white;
+  color: #172b4d !important;
+  box-shadow:inset 0px 0px 0px 2px #0279bf;
+}
+
+.editing:hover {
+  background: white !important;
+}
+
+.card {
+  background: white;
+  border-bottom: 1px solid #aaa;
+}
+
+.list {
+/*   padding: 7px; */
+  min-width: 280px;
+  margin: 10px 5px;
+  position: relative;
+  background: #dfe1e6;
+}
+
+
+.add-list {
+  min-width: 280px;
+  margin: 10px 5px;
+  position: relative;
+  background: rgba(0,0,0,.12);
+  color: hsla(0,0%,100%,.8);
+}
+
+.ghost {
+  opacity: .1;
+  color: #000;
+  background-color: #000;
+}
+
+.add-card {
+  width: calc(100% - 35px);
+  display: inline-block;
+  padding: 10px;
+  margin-top: 0px;
+  color: gray;
+  text-decoration: none;
+/*   border-bottom: 1px solid #dfe1e6; */
+}
+
+.add-card:hover {
+  background-color: rgba(9,30,66,.13);
+}
+
+.del {
+  font-weight: 600;
+  color: gray;
+}
